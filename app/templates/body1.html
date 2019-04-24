@@ -1,0 +1,30 @@
+{% block body1 %}
+
+    <table class="movieTable" style="width:100%">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Primary Title</th>
+            <th>Original Title</th>
+            <th>Is Adult</th>
+            <th>Release Year</th>
+            <th>Duration(min)</th>
+            <th>Genres</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+            <tr>
+                <td class="id">{{ row.tconst }}</td>
+                <td class="primaryTitle">{{ row.primaryTitle }}</td>
+                <td class="originalTitle">{{ row.originalTitle }}</td>
+                <td class="isAdult">{{ row.isAdult }}</td>
+                <td class="startYear">{{ row.startYear }}</td>
+                <td class="runtimeMinutes">{{ row.runtimeMinutes }}</td>
+                <td class="genres">{{ row.genres }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}

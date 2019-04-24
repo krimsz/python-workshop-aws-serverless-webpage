@@ -1,0 +1,46 @@
+{% block body2 %}
+    <div class="container">
+
+        {% for row in rows %}
+            <div class="movie">
+                <div class="movieRow id">
+                    <p>Id</p>
+                    <p>{{ row.tconst }}</p>
+                </div>
+                <div class="titleContainer">
+                    <div class="movieRow primaryTitle">
+                        <p>Primary Title</p>
+                        <p>{{ row.primaryTitle }}</p>
+                    </div>
+                    <div class="movieRow originalTitle">
+                        <p>Original Title</p>
+                        <p>{{ row.originalTitle }}</p>
+                    </div>
+                </div>
+                <div class="genresContainer">
+
+                    <div class="movieRow isAdult">
+                        <p>Is Adult</p>
+                        <p>{{ row.isAdult }}</p>
+                    </div>
+                    <div class="movieRow genres">
+                        <p>Genres</p>
+                        <p>{{ row.genres }}</p>
+                    </div>
+                </div>
+                <div class="yea">
+                    <div class="movieRow startYear">
+                        <p>Release Year</p>
+                        <p>{{ row.startYear }}</p>
+                    </div>
+                    <div class="movieRow runtimeMinutes">
+                        <p>Duration (min)</p>
+                        <p>{{ row.runtimeMinutes }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+    </div>
+{% endblock %}

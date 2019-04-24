@@ -1,0 +1,33 @@
+.container{
+  width: 100%;
+    text-align: center ;
+}
+.movie{
+    width: 80%;
+    padding:50px;
+    border: 2px dotted black;
+    height: 320px;
+    background-color: #4CAF50;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.movieRow{
+    width: 50%;
+    float: left;
+    display: inline-block;
+    background-color: #4CAF50;
+}
+
+.titleContainer{
+    display: inline-block;
+        float: left;
+    width: 100%;
+        text-align: center;
+
+
+}
+
+.title{
+    font-weight: bold;
+}
